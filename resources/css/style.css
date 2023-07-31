@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Lexend+Deca&display=swap");
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+}
+.container {
+    display: flex;
+    max-width: 1100px;
+    height: 540px;
+    margin: 0 2%;
+    margin-bottom: 0;
+}
+.column {
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.column h1 {
+    font-size: 2.625rem;
+    font-weight: 700;
+    font-family: "Big Shoulders Display", sans-serif;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+}
+.column p {
+    font-size: 1.125rem;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.4;
+}
+.column .button {
+    margin-top: 4rem;
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 10rem;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-family: "Lexend Deca", sans-serif;
+    width: 8rem;
+}
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.sedan .button {
+    color: hsl(31, 77%, 52%);
+}
+.suv {
+    background-color: hsl(184, 100%, 22%);
+}
+.suv .button {
+    color: hsl(184, 100%, 22%);
+}
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.luxury .button {
+    color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .column {
+        padding: 5% 10%;
+        flex-direction: column;
+    }
+    .column h1 {
+        font-size: 2.25rem;
+    }
+    .column p {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+    .column .button {
+        margin-top: 2.5rem;
+        font-size: 1.125rem;
+        width: 7.25rem;
+        margin-bottom: 1rem;
+    }
+    .sedan {
+        border-radius: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .luxury {
+        border-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
